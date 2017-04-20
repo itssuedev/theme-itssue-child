@@ -1,0 +1,97 @@
+/*
+Theme Name: theme itssue child
+Template: theme-itssue
+*/
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: inherit;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid #9f9f9f;
+  border-bottom: 1px solid #b5b5b5;
+  background-color: #fff;
+}
+
+a.custom-logo-link {
+  float: left;
+  margin-left: 80px;
+}
+
+#main-menu {
+  float: right;
+  margin-right: 80px;
+}
+
+nav.normal, nav.mega {
+  position: relative;
+  border: 0px;
+  background-color: #fff;
+  background-image: initial;
+}
+
+nav.mega a {
+  color: #0062c3;
+}
+
+.wrapper-inner {
+  margin-top: 92px;
+  padding: 0;
+}
+
+.main-content, .main-sidebar {
+  margin-top: 0;
+}
+
+.main-content {
+  margin-right: -350px;
+}
+
+.main-sidebar {
+  margin-right: 80px;
+}
+
+.page-wrapper {
+  margin-left: 80px;
+  margin-right: 350px;
+}
+
+.site-branding {
+  float: inherit;
+  position: absolute;
+  top: 130px;
+  margin-left: 120px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.wp-custom-header iframe, .wp-custom-header video, .wp-custom-header img {
+  left: 0;
+  top: 0;
+  transform: none;
+  width: 100%;
+  height: auto;
+}
+
+.wp-custom-header .wp-custom-header-video-button {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  height: 45px;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 30px;
+  top: 130px;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
+  width: 45px;
+}
+
+.blocks {
+  margin: 20px 105px;
+}
