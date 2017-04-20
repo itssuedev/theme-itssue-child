@@ -54,3 +54,16 @@ function it_adj_theme_customize( $wp_customize ) {
     = 'it_customize_front_page';
 }
 add_action( 'customize_register', 'it_adj_theme_customize', 20, 1 );
+
+function it_enqueue_child_scripts() {
+  wp_enqueue_style( 'style-child-css',
+    get_stylesheet_directory_uri(). '/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'it_enqueue_child_scripts' );
+
+function it_adj_print_header() {
+  remove_action( 'it_print_header', 'it_print_header' );
+
+  the_custom_logo();
+}
+add_action( 'it_print_header', 'it_adj_print_header', 5 );
